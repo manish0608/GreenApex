@@ -1,32 +1,96 @@
-body {
-  margin: 20px;
-  background-color: cornsilk;
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-#form {
-  border: 2px solid black;
-  padding: 10px;
-  background: linear-gradient(45deg, cornsilk, grey, cornsilk);
-  font-weight: bold;
-  text-transform: uppercase;
+body
+{
+     background-image: url("https://health.clevelandclinic.org/wp-content/uploads/sites/3/2019/06/cropped-GettyImages-643764514.jpg");
+     color: white;
+     font-size: 20px;
 }
-input[type="text"] {
-  margin-top: 10px;
-  border: 2px solid black;
-  width: 250px;
+body .navbar
+{
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
 }
-label {
-  margin-right: 10px;
+
+#main-section
+{
+    display: flex;
+    flex-direction: row;
+    /* overflow: hidden; */
+    
 }
-button {
-  border: 2px solid black;
-  background-color: green;
-  color: whitesmoke;
-  text-transform: uppercase;
+#main-section #sidebar
+{
+    width: 150px;
+    border-right: 2px solid black;
+    background-color: rgb(165, 89, 89);
+    font-size: 20px;
 }
-.editButton {
-  background-color: green;
+#main-section #sidebar a{
+    display: block;
+    margin: 30px;
+    text-decoration: none;
+    color:white;
+
 }
-.delButton {
-  background-color: red;
+#main-section #checkbox
+{
+    margin: 30px 10px;
+    width: 180px;
+    color: white;
+
 }
+
+#main-section #card-section .card
+{
+    margin: 30px ;
+    display: inline-flex;
+    overflow: hidden;
+}
+#main-section #trash-section .card
+{
+    margin: 30px ;
+    display: inline-flex;
+}
+ #main-section #card-section .card 
+ {
+    transition: all 2s;
+ }
+ #main-section #card-section .card:hover{
+
+    transform: scale(1.1,1.1);
+ }
+
+ input[type="text"]
+ {
+     padding: 5px 30px;
+     margin: 10px 30px;
+ }
+ input[type="url"],input[type="number"]
+ {
+    padding: 5px 30px;
+    margin: 10px 30px;
+ }
+
+  #detail-section .card
+{
+    margin: 30px ;
+    display: inline-flex;
+    overflow: hidden;
+}
+ #detail-section .card img
+ {
+    transition: all 2s;
+ }
+  #detail-section .card:hover img{
+
+    transform: scale(1.2,1.2);
+ }
+ 
