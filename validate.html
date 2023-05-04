@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <form autocomplete="off">
+      <h1 class="text-center text-black bg-primary m-3">Log In Form</h1>
+        <div class="m-3">
+          <label for="fname" class="form-label">FIRST NAME</label>
+          <input type="text" class="form-control" id="fname" placeholder="Enter First Name">
+          <span id="firstname" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="m-3">
+          <label for="lname" class="form-label">LAST NAME</label>
+          <input type="text" class="form-control" id="lname" placeholder="Enter last Name">
+          <span id="lastname" class="text-danger font-weight-bold"></span>
+
+        </div>
+        <button type="button" class="btn btn-primary m-3" onclick="addData()">SAVE</button>
+        <button type="reset" class="btn btn-primary m-3" >RESET</button>
+      </form>
+      <br>
+      <h1 class="text-center text-black bg-primary m-3">DATA TABLE</h1> <br>
+
+    <table class="table text-center m-3">
+        <thead>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Action</th>
+            </tr>
+        <tbody id="tablebody"></tbody>
+    </table>
+      <script src="validate.js"></script>
+  </body>
+</html>
