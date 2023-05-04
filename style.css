@@ -1,0 +1,32 @@
+body {
+  margin: 20px;
+  background-color: cornsilk;
+}
+
+#form {
+  border: 2px solid black;
+  padding: 10px;
+  background: linear-gradient(45deg, cornsilk, grey, cornsilk);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+input[type="text"] {
+  margin-top: 10px;
+  border: 2px solid black;
+  width: 250px;
+}
+label {
+  margin-right: 10px;
+}
+button {
+  border: 2px solid black;
+  background-color: green;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+.editButton {
+  background-color: green;
+}
+.delButton {
+  background-color: red;
+}
